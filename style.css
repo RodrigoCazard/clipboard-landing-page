@@ -1,0 +1,106 @@
+ /* -------------------------------- Variables ------------------------------- */
+
+:root{
+    --strong-Cyan:hsl(171, 66%, 44%);
+    --light-Blue: hsl(233, 100%, 69%);
+
+    --dark-Grayish-Blue: hsl(214, 11%, 70%);
+    --Grayish-Blue: hsl(203, 18%, 80%);
+}
+
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.2rem;
+    background-color: var(--Grayish-Blue);
+}
+
+.btn{
+    padding: 10px 50px;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    margin: 0px 5px;
+    
+}
+.boton_ios:hover{
+    opacity: 80%;
+    color: white;
+    background-color: hsl(171, 66%, 44%);
+}
+.boton_mac:hover{
+    opacity: 80%;
+    color: white;
+    background-color: hsl(233, 100%, 69%);
+}
+.boton_ios{
+    background-color: var(--strong-Cyan);
+    box-shadow: 2px 2px 0.5px 0px rgb(29, 137, 125);
+}
+.boton_mac{
+    background-color: var(--light-Blue);
+    box-shadow: 2px 2px 0.5px 0px rgb(68, 100, 181);
+}
+.hero{
+    background-image: url(assets/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.computer{
+    margin-left: -30px;
+}
+
+/* -------------------------------- My style -------------------------------- */
+
+.main_text{
+    font-weight: bold;
+}
+
+.sub_text{
+ opacity: 50%;
+}
+
+section{
+    padding: 100px 0;
+}
+.text{
+    margin: 20px 0;
+}
+.maxwidth{
+    max-width: 750px;
+}
+.text{
+    margin-bottom: 50px;
+}
+.maxwidth_sub{
+    max-width: 460px;
+}
+footer{
+    padding: 40px 0 20px;
+    background-color: var(--dark-Grayish-Blue);
+}
+a{
+    opacity: 40%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer .img_logo{
+    width: 60px;
+    filter: brightness(50%);
+
+}
+a:hover{
+    color: var(--strong-Cyan);
+    filter: brightness(80%);
+}
+.icon:hover{
+    filter: invert(48%) sepia(13%) saturate(3907%) hue-rotate(130deg) brightness(95%) contrast(80%);
+
+}
+/* ------------------------------ Media queries ----------------------------- */
+
+@media (max-width: 992px){
+    .computer{
+        margin: auto;
+    }
+}
